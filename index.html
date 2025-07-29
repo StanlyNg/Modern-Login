@@ -4,63 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>现代登录页面 | AsmrProg</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>现代登录页面 | AsmrProg</title>
 </head>
 
 <body>
 
     <div class="container" id="container">
+        <!-- 注册区域 -->
         <div class="form-container sign-up">
             <form>
-                <h1>创建账户t</h1>
+                <h1>创建账户</h1>
                 <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="icon" id="google-login"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon" id="facebook-login"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon" id="github-login"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon" id="linkedin-login"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <button>注册</button>
+                <span>或使用您的电子邮件注册</span>
+                <input type="text" placeholder="姓名">
+                <input type="email" placeholder="电子邮件">
+                <input type="password" placeholder="密码">
+                <button type="submit">注册</button>
             </form>
         </div>
+
+        <!-- 登录区域 -->
         <div class="form-container sign-in">
             <form>
                 <h1>登录</h1>
                 <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="icon" id="google-login"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon" id="facebook-login"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon" id="github-login"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon" id="linkedin-login"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <span>或使用您的电子邮件密码</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <span>或使用您的电子邮件密码登录</span>
+                <input type="email" placeholder="电子邮件">
+                <input type="password" placeholder="密码">
                 <a href="#">忘记密码？</a>
-                <button>登录</button>
+                <button type="submit">登录</button>
             </form>
         </div>
+
+        <!-- 切换面板 -->
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
                     <h1>欢迎回来！</h1>
-                    <p>输入您的个人信息以使用网站的所有功能</p>
+                    <p>输入您的个人信息以继续使用我们的服务</p>
                     <button class="hidden" id="login">登录</button>
                 </div>
                 <div class="toggle-panel toggle-right">
                     <h1>朋友你好！</h1>
-                    <p>使用您的个人信息注册即可使用网站的所有功能</p>
+                    <p>使用您的个人信息注册即可体验我们的网站</p>
                     <button class="hidden" id="register">注册</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
